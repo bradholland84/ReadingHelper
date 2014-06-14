@@ -1,0 +1,21 @@
+ <resources>
+        <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+            <item name="android:actionBarStyle">@style/MyActionBar</item>
+        </style>
+
+        <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+            <item name="android:background">#91A666</item>
+        </style>
+
+     <style name="main_inner_ratingbar"  >
+         <item name="android:progressDrawable">@drawable/rating_bar</item>
+         <item name="android:indeterminateDrawable">@drawable/rating_bar</item>
+         <item name="android:minHeight">24dip</item>
+         <item name="android:maxHeight">24dip</item>
+         <item name="android:thumb">@null</item>
+         <item name="android:isIndicator">true</item>
+     </style>
+
+     </resources>
+
+
