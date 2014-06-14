@@ -23,7 +23,7 @@ public class BookCard extends Card {
     private String mBookTitle = "sample title";
     private String mBookDescription = "This is a sample description that may or may not take up a lot of space";
     private float mBookRating = (float) 3.5;
-    private String yay = "yay";
+    private String yay1 = "yay";
 
 
 
