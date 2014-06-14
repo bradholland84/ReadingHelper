@@ -5,7 +5,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import it.gmariotti.cardslib.library.view.CardView;
+import java.util.ArrayList;
+
+import it.gmariotti.cardslib.library.internal.Card;
+import it.gmariotti.cardslib.library.internal.CardArrayAdapter;
+import it.gmariotti.cardslib.library.view.CardListView;
 
 
 public class MainReadingActivity extends Activity {
@@ -15,12 +19,31 @@ public class MainReadingActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_reading);
 
+        //create an array of card objects
+        ArrayList<Card> cardsArray = new ArrayList<Card>();
+
+
         //Create a card
         BookCard cardexample = new BookCard(getBaseContext(), R.layout.inner_content_layout);
         cardexample.setShadow(true);
 
-        CardView bookCardView = (CardView)findViewById(R.id.card_view);
-        bookCardView.setCard(cardexample);
+        BookCard cardexample2 = new BookCard(getBaseContext(), R.layout.inner_content_layout);
+        cardexample.setShadow(true);
+
+        BookCard cardexample3 = new BookCard(getBaseContext(), R.layout.inner_content_layout);
+        cardexample.setShadow(true);
+
+        cardsArray.add(cardexample);
+        cardsArray.add(cardexample2);
+        cardsArray.add(cardexample3);
+
+        CardArrayAdapter mCardArrayAdapter = new CardArrayAdapter(getBaseContext(),cardsArray);
+
+        CardListView listView = (CardListView)findViewById(R.id.card_view);
+        if (listView!=null){
+            listView.setAdapter(mCardArrayAdapter);
+        }
+
 
     }
 
