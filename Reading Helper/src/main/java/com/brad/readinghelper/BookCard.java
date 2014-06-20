@@ -53,9 +53,9 @@ public class BookCard extends Card {
 
         addCardHeader(header);
 
-        BookCardThumb thumbnail = new BookCardThumb(getContext());
-        thumbnail.setDrawableResource(R.drawable.ic_launcher);
-        addCardThumbnail(thumbnail);
+        BookCardThumb bookthumbnail = new BookCardThumb(getContext());
+        bookthumbnail.setDrawableResource(R.drawable.pngbook_cover);
+        addCardThumbnail(bookthumbnail);
     }
 
     public void setupInnerViewElements(ViewGroup parent, View view) {

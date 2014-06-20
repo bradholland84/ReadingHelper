@@ -33,9 +33,21 @@ public class MainReadingActivity extends Activity {
         BookCard cardexample3 = new BookCard(getBaseContext(), R.layout.inner_content_layout);
         cardexample.setShadow(true);
 
+        BookCard cardexample4 = new BookCard(getBaseContext(), R.layout.inner_content_layout);
+        cardexample.setShadow(true);
+
+        BookCard cardexample5 = new BookCard(getBaseContext(), R.layout.inner_content_layout);
+        cardexample.setShadow(true);
+
+        BookCard cardexample6 = new BookCard(getBaseContext(), R.layout.inner_content_layout);
+        cardexample.setShadow(true);
+
         cardsArray.add(cardexample);
         cardsArray.add(cardexample2);
         cardsArray.add(cardexample3);
+        cardsArray.add(cardexample4);
+        cardsArray.add(cardexample5);
+        cardsArray.add(cardexample6);
 
         CardArrayAdapter mCardArrayAdapter = new CardArrayAdapter(getBaseContext(),cardsArray);
 
