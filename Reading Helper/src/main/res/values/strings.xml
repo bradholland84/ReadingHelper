@@ -8,5 +8,10 @@
     <string name="title_section1_Overview">Overview</string>
     <string name="title_section2_Notes">Notes</string>
     <string name="title_section3_Time_Charts">Time Charts</string>
+    <string name="Time_spent_reading">Time spent reading</string>
+    <string name="Time_today">Today: </string>
+    <string name="Time_week">This week: </string>
+    <string name="Time_month">This month: </string>
+    <string name="Time_total">Total time: </string>
 
 </resources>

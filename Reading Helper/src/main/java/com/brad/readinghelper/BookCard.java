@@ -23,6 +23,7 @@ public class BookCard extends Card {
     private String mBookTitle = "sample title";
     private String mBookDescription = "This is a sample description that may or may not take up a lot of space";
     private float mBookRating = (float) 3.5;
+    private int mTime;
 
 
     public BookCard(Context context) {
@@ -102,6 +103,20 @@ public class BookCard extends Card {
     }
 
 
+    /*
+    GETTERS AND SETTERS
+    *
+    *
+     */
+
+    public int getmTime() {
+        return mTime;
+    }
+
+    public void setmTime(int mTime) {
+        this.mTime = mTime;
+    }
+
     public String getmBookDescription() {
         return mBookDescription;
     }
@@ -118,3 +133,5 @@ public class BookCard extends Card {
         return mBookTitle;
     }
 }
+
+
