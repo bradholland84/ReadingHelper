@@ -54,6 +54,9 @@ public class BookCard extends Card {
         BookCardThumb bookthumbnail = new BookCardThumb(getContext());
         bookthumbnail.setDrawableResource(R.drawable.pngbook_cover);
         addCardThumbnail(bookthumbnail);
+
+
+
     }
 
     public void setupInnerViewElements(ViewGroup parent, View view) {
@@ -97,6 +100,18 @@ public class BookCard extends Card {
 
         }
     }
+
+    //set a listener for card clicks
+    /*
+    OnCardClickListener clickListener = new OnCardClickListener() {
+        @Override
+        public void onClick(Card card, View view) {
+            //do stuff when clicked
+            Intent book_detail = new Intent(getContext(), BookDetail.class);
+            mContext.startActivity(book_detail);
+        }
+    };
+*/
 
     public String getmBookDescription() {
         return mBookDescription;

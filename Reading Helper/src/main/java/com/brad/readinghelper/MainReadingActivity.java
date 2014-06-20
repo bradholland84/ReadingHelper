@@ -1,9 +1,11 @@
 package com.brad.readinghelper;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import java.util.ArrayList;
 
@@ -27,20 +29,30 @@ public class MainReadingActivity extends Activity {
         BookCard cardexample = new BookCard(getBaseContext(), R.layout.inner_content_layout);
         cardexample.setShadow(true);
 
+        //set a listener for card clicks
+        cardexample.setOnClickListener( new Card.OnCardClickListener() {
+            @Override
+            public void onClick(Card card, View view) {
+                //do stuff when clicked
+                Intent book_detail = new Intent(MainReadingActivity.this, BookDetail.class);
+                startActivity(book_detail);
+            }
+        });
+
         BookCard cardexample2 = new BookCard(getBaseContext(), R.layout.inner_content_layout);
-        cardexample.setShadow(true);
+        cardexample2.setShadow(true);
 
         BookCard cardexample3 = new BookCard(getBaseContext(), R.layout.inner_content_layout);
-        cardexample.setShadow(true);
+        cardexample3.setShadow(true);
 
         BookCard cardexample4 = new BookCard(getBaseContext(), R.layout.inner_content_layout);
-        cardexample.setShadow(true);
+        cardexample4.setShadow(true);
 
         BookCard cardexample5 = new BookCard(getBaseContext(), R.layout.inner_content_layout);
-        cardexample.setShadow(true);
+        cardexample5.setShadow(true);
 
         BookCard cardexample6 = new BookCard(getBaseContext(), R.layout.inner_content_layout);
-        cardexample.setShadow(true);
+        cardexample6.setShadow(true);
 
         cardsArray.add(cardexample);
         cardsArray.add(cardexample2);
@@ -55,7 +67,6 @@ public class MainReadingActivity extends Activity {
         if (listView!=null){
             listView.setAdapter(mCardArrayAdapter);
         }
-
 
     }
 
