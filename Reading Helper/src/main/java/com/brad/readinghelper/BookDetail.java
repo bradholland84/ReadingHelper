@@ -56,7 +56,7 @@ public class BookDetail extends Activity {
             View rootView = inflater.inflate(R.layout.fragment_book_detail, container, false);
             return rootView;
 
-            //do stuff
+            //do stuff here
 
         }
     }
