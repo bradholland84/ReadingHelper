@@ -1,11 +1,9 @@
 package com.brad.readinghelper;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 import java.util.ArrayList;
 
@@ -24,20 +22,14 @@ public class MainReadingActivity extends Activity {
         //create an array of card objects
         ArrayList<Card> cardsArray = new ArrayList<Card>();
 
+        MyCardClickListener listener = new MyCardClickListener();
 
         //Create a card
         BookCard cardexample = new BookCard(getBaseContext(), R.layout.inner_content_layout);
         cardexample.setShadow(true);
 
         //set a listener for card clicks
-        cardexample.setOnClickListener( new Card.OnCardClickListener() {
-            @Override
-            public void onClick(Card card, View view) {
-                //do stuff when clicked
-                Intent book_detail = new Intent(MainReadingActivity.this, BookDetail.class);
-                startActivity(book_detail);
-            }
-        });
+        cardexample.setOnClickListener(listener);
 
         BookCard cardexample2 = new BookCard(getBaseContext(), R.layout.inner_content_layout);
         cardexample2.setShadow(true);
