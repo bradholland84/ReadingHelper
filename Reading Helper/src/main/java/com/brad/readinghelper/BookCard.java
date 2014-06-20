@@ -25,8 +25,6 @@ public class BookCard extends Card {
     private float mBookRating = (float) 3.5;
 
 
-
-
     public BookCard(Context context) {
         super(context, R.layout.inner_content_layout);
         init();
@@ -99,8 +97,6 @@ public class BookCard extends Card {
 
         }
     }
-
-
 
     public String getmBookDescription() {
         return mBookDescription;

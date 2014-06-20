@@ -2,6 +2,18 @@
 <pre-dex-items>
 
     <item
+        dex="C:\Users\Brad\AndroidStudioProjects\ReadingHelper\Reading Helper\build\intermediates\pre-dexed\debug\support-v4-19.1.0-2e02ec3abd59225db166ba5225cb3698a8f6e9f1.jar"
+        jar="C:\Users\Brad\AppData\Local\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+    <item
+        dex="C:\Users\Brad\AndroidStudioProjects\ReadingHelper\Reading Helper\build\intermediates\pre-dexed\debug\support-v13-19.1.0-4fbaf619b9911c61f839606f51cc5abba5bec8a5.jar"
+        jar="C:\Users\Brad\AppData\Local\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-v13\19.1.0\support-v13-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="6b852a232f642c75a7fdfc7212b841b8c8f8959c"/>
+    <item
         dex="C:\Users\Brad\AndroidStudioProjects\ReadingHelper\Reading Helper\build\intermediates\pre-dexed\debug\classes-25f0b9f57a3316a9c93a7c60b2b7c831709ece2c.jar"
         jar="C:\Users\Brad\AndroidStudioProjects\ReadingHelper\build\intermediates\exploded-aar\com.github.gabrielemariotti.cards\library\1.6.0\classes.jar"
         jumboMode="false"
