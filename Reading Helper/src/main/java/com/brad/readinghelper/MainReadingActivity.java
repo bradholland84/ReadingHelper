@@ -22,6 +22,7 @@ public class MainReadingActivity extends Activity {
         //create an array of card objects
         ArrayList<Card> cardsArray = new ArrayList<Card>();
 
+        //create instance of MyCardClickListener so that the card listeners can be added
         MyCardClickListener listener = new MyCardClickListener();
 
         //Create a card
