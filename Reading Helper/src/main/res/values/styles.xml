@@ -10,7 +10,6 @@
      <style name="main_inner_ratingbar"  >
          <item name="android:progressDrawable">@drawable/rating_bar</item>
          <item name="android:indeterminateDrawable">@drawable/rating_bar</item>
-
          <item name="android:thumb">@null</item>
          <item name="android:isIndicator">true</item>
      </style>
