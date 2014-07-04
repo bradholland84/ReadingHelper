@@ -40,6 +40,8 @@ public class MainReadingActivity extends Activity {
         BookCard cardexample3 = new BookCard(getBaseContext(), R.layout.inner_content_layout);
         cardexample3.setShadow(true);
 
+        cardexample3.setOnClickListener(listener);
+
         BookCard cardexample4 = new BookCard(getBaseContext(), R.layout.inner_content_layout);
         cardexample4.setShadow(true);
 
