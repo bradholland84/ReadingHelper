@@ -17,7 +17,7 @@ public class BookDetail extends Activity {
         setContentView(R.layout.activity_book_detail2);
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
+                    .add(R.id.container, new BookDetailFragment())
                     .commit();
         }
     }
@@ -45,9 +45,9 @@ public class BookDetail extends Activity {
     /**
      * A placeholder fragment containing a simple view.
      */
-    public static class PlaceholderFragment extends Fragment {
+    public static class BookDetailFragment extends Fragment {
 
-        public PlaceholderFragment() {
+        public BookDetailFragment() {
         }
 
         @Override
@@ -57,6 +57,10 @@ public class BookDetail extends Activity {
             return rootView;
 
             //do stuff here
+
+
+
+
 
         }
     }
