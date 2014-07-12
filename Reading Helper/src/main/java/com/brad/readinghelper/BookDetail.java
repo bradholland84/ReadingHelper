@@ -37,8 +37,6 @@ public class BookDetail extends Activity {
     }
 
 
-
-
     /** * Photo Selection result */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -52,16 +50,13 @@ public class BookDetail extends Activity {
             //Link to the image
             final String imageFilePath = cursor.getString(0);
             cursor.close();
+
             ImageButton mBookImageButton = (ImageButton) findViewById(R.id.imageButton);
             mBookImageButton.setImageBitmap(BitmapFactory.decodeFile(imageFilePath));
 
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
-
-
-
-
 
 
     @Override

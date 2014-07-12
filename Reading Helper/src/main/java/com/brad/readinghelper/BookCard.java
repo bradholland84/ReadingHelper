@@ -1,6 +1,8 @@
 package com.brad.readinghelper;
 
 import android.content.Context;
+import android.os.Parcel;
+import android.os.Parcelable;
 import android.util.DisplayMetrics;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,7 +20,7 @@ import it.gmariotti.cardslib.library.internal.base.BaseCard;
  * Created by Brad on 6/7/2014.
  */
 
-public class BookCard extends Card {
+public class BookCard extends Card implements Parcelable {
 
     private String mBookTitle = "sample title";
     private String mBookDescription = "This is a sample description that may or may not take up a lot of space";
@@ -35,6 +37,29 @@ public class BookCard extends Card {
         super(context, innerLayout);
         init();
     }
+
+    /*
+    Parcel Functions for object data here
+     */
+
+    // write your object's data to the passed-in Parcel
+    public void writeToParcel(Parcel out, int flags) {
+        out.writeFloat(mBookRating);
+        out.writeInt(mTime);
+        out.writeString(mBookTitle);
+        out.writeString(mBookDescription);
+    }
+
+    // this is used to regenerate your object. All Parcelables must have a CREATOR that implements these two methods
+    public static final Parcelable.Creator<BookCard> CREATOR = new Parcelable.Creator<BookCard>() {
+        public MyParcelable createFromParcel(Parcel in) {
+            return new MyParcelable(in);
+        }
+
+        public MyParcelable[] newArray(int size) {
+            return new MyParcelable[size];
+        }
+    };
 
     /*
     Function to handle book card construction, including all assets
