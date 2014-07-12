@@ -50,16 +50,22 @@ public class BookCard extends Card implements Parcelable {
         out.writeString(mBookDescription);
     }
 
+    public int describeContents() {
+        return 0;
+    }
+
     // this is used to regenerate your object. All Parcelables must have a CREATOR that implements these two methods
     public static final Parcelable.Creator<BookCard> CREATOR = new Parcelable.Creator<BookCard>() {
-        public MyParcelable createFromParcel(Parcel in) {
-            return new MyParcelable(in);
+        public BookCard createFromParcel(Parcel in) {
+            return new BookCard(in);
         }
 
-        public MyParcelable[] newArray(int size) {
-            return new MyParcelable[size];
+        public BookCard[] newArray(int size) {
+            return new BookCard[size];
         }
     };
+
+
 
     /*
     Function to handle book card construction, including all assets
