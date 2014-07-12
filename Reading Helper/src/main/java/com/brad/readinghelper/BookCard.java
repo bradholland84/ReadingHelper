@@ -57,7 +57,7 @@ public class BookCard extends Card implements Parcelable {
     // this is used to regenerate your object. All Parcelables must have a CREATOR that implements these two methods
     public static final Parcelable.Creator<BookCard> CREATOR = new Parcelable.Creator<BookCard>() {
         public BookCard createFromParcel(Parcel in) {
-            return new BookCard(in);
+            return new BookCard (in);
         }
 
         public BookCard[] newArray(int size) {
