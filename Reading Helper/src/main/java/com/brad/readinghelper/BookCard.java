@@ -1,8 +1,6 @@
 package com.brad.readinghelper;
 
 import android.content.Context;
-import android.os.Parcel;
-import android.os.Parcelable;
 import android.util.DisplayMetrics;
 import android.view.MenuItem;
 import android.view.View;
@@ -10,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.parceler.Parcel;
 
 import it.gmariotti.cardslib.library.internal.Card;
 import it.gmariotti.cardslib.library.internal.CardHeader;
@@ -19,8 +19,9 @@ import it.gmariotti.cardslib.library.internal.base.BaseCard;
 /**
  * Created by Brad on 6/7/2014.
  */
+@Parcel
+public class BookCard extends Card  {
 
-public class BookCard extends Card implements Parcelable {
 
     private String mBookTitle = "sample title";
     private String mBookDescription = "This is a sample description that may or may not take up a lot of space";
@@ -37,33 +38,6 @@ public class BookCard extends Card implements Parcelable {
         super(context, innerLayout);
         init();
     }
-
-    /*
-    Parcel Functions for object data here
-     */
-
-    // write your object's data to the passed-in Parcel
-    public void writeToParcel(Parcel out, int flags) {
-        out.writeFloat(mBookRating);
-        out.writeInt(mTime);
-        out.writeString(mBookTitle);
-        out.writeString(mBookDescription);
-    }
-
-    public int describeContents() {
-        return 0;
-    }
-
-    // this is used to regenerate your object. All Parcelables must have a CREATOR that implements these two methods
-    public static final Parcelable.Creator<BookCard> CREATOR = new Parcelable.Creator<BookCard>() {
-        public BookCard createFromParcel(Parcel in) {
-            return new BookCard (in);
-        }
-
-        public BookCard[] newArray(int size) {
-            return new BookCard[size];
-        }
-    };
 
 
 
@@ -86,8 +60,6 @@ public class BookCard extends Card implements Parcelable {
         BookCardThumb bookthumbnail = new BookCardThumb(getContext());
         bookthumbnail.setDrawableResource(R.drawable.pngbook_cover);
         addCardThumbnail(bookthumbnail);
-
-
 
     }
 
