@@ -4,7 +4,7 @@
         </style>
 
         <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
-            <item name="android:background">#91A666</item>
+            <item name="android:background">#ff95a6a0</item>
         </style>
 
      <style name="main_inner_ratingbar"  >
