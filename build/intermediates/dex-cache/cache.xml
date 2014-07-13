@@ -8,6 +8,12 @@
         revision="19.1.0"
         sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
     <item
+        dex="C:\Users\Brad\Android studioProjects\ReadingHelper\Reading Helper\build\intermediates\pre-dexed\debug\gson-2.2.4-3823b9d9017816b67b2f414a9e7cf5269297053c.jar"
+        jar="C:\Users\Brad\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568"/>
+    <item
         dex="C:\Users\Brad\Android studioProjects\ReadingHelper\Reading Helper\build\intermediates\pre-dexed\debug\classes-3afaffecfa63ce60e9c7f214dc691045f55232fa.jar"
         jar="C:\Users\Brad\Android studioProjects\ReadingHelper\build\intermediates\exploded-aar\com.github.gabrielemariotti.cards\library\1.6.0\classes.jar"
         jumboMode="false"
